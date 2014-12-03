@@ -167,3 +167,4 @@ Umbraco.Extensions/App_Data/NuGetBackup/*
 # =========================
 Umbraco.Site/App_Data/cache/*
 Umbraco.Site/Media/***/Cached/*
+Umbraco.Extensions/App_Data/ClientDependency/
