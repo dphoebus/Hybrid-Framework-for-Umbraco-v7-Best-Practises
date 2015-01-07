@@ -26,10 +26,9 @@
 </section>
 
 @*Pager*@
-@if (Model.Content.Pager.Pages.Count() > 1) 
+@if (Model.Content.Pager.Pages.Count() > 1)
 {
-    <div class="pagination">	
-
+    <div class="pagination">
 	    <ul>
             @if (Model.Content.Pager.IsFirstPage)
             {
@@ -48,7 +47,6 @@
                 {
                     <li><a class="active">@number</a></li>
                 }
-
                 else if ((distanceFromCurrent > -10) && (distanceFromCurrent < 10))
                 {
                     <li><a href="@Umbraco.AppendOrUpdateQueryString("page", number.ToString())">@number</a></li>
@@ -63,9 +61,7 @@
             {
                 <li><a href="@Umbraco.AppendOrUpdateQueryString("page", (Model.Content.Pager.CurrentPage + 1).ToString())">&gt;</a></li>
             }
-
 	    </ul>
-
     </div>
 }
 
